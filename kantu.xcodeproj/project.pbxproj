@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B4D1D3E0D0F008618B5 /* main.m */; };
+		A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B501D3E0D0F008618B5 /* AppDelegate.m */; };
+		A19F9B541D3E0D0F008618B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B531D3E0D0F008618B5 /* ViewController.m */; };
+		A19F9B571D3E0D0F008618B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B551D3E0D0F008618B5 /* Main.storyboard */; };
+		A19F9B591D3E0D0F008618B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B581D3E0D0F008618B5 /* Assets.xcassets */; };
+		A19F9B5C1D3E0D0F008618B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */; };
+		A19F9B671D3E0D0F008618B5 /* kantuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B661D3E0D0F008618B5 /* kantuTests.m */; };
+		A19F9B721D3E0D10008618B5 /* kantuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B711D3E0D10008618B5 /* kantuUITests.m */; };
+		A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B811D3E2529008618B5 /* IMCollectionViewCell.m */; };
+		A19F9B841D3E2529008618B5 /* IMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */; };
+		A1F4DBAE1D45E44800F9DBEF /* IMGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */; };
+		AE8CE9253CD158F3CF5C4A3B /* libPods-kantu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A19F9B631D3E0D0F008618B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19F9B411D3E0D0D008618B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19F9B481D3E0D0E008618B5;
+			remoteInfo = kantu;
+		};
+		A19F9B6E1D3E0D10008618B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19F9B411D3E0D0D008618B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19F9B481D3E0D0E008618B5;
+			remoteInfo = kantu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C4DF0F4E99AED682ED2BF49 /* Pods-kantu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kantu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kantu/Pods-kantu.debug.xcconfig"; sourceTree = "<group>"; };
+		3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kantu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19F9B491D3E0D0E008618B5 /* kantu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kantu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19F9B4D1D3E0D0F008618B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A19F9B4F1D3E0D0F008618B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A19F9B501D3E0D0F008618B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A19F9B521D3E0D0F008618B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A19F9B531D3E0D0F008618B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A19F9B561D3E0D0F008618B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A19F9B581D3E0D0F008618B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A19F9B5B1D3E0D0F008618B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A19F9B5D1D3E0D0F008618B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19F9B621D3E0D0F008618B5 /* kantuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kantuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19F9B661D3E0D0F008618B5 /* kantuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kantuTests.m; sourceTree = "<group>"; };
+		A19F9B681D3E0D0F008618B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19F9B6D1D3E0D10008618B5 /* kantuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kantuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19F9B711D3E0D10008618B5 /* kantuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kantuUITests.m; sourceTree = "<group>"; };
+		A19F9B731D3E0D10008618B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19F9B801D3E2529008618B5 /* IMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMCollectionViewCell.h; sourceTree = "<group>"; };
+		A19F9B811D3E2529008618B5 /* IMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMCollectionViewCell.m; sourceTree = "<group>"; };
+		A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMCollectionViewCell.xib; sourceTree = "<group>"; };
+		A19F9B851D3E2F5F008618B5 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		A19F9B861D3E2F87008618B5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A1F4DBAC1D45E44800F9DBEF /* IMGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGModel.h; sourceTree = "<group>"; };
+		A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGModel.m; sourceTree = "<group>"; };
+		A7A747B477FCD4CDC2ADEE1F /* Pods-kantu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kantu.release.xcconfig"; path = "Pods/Target Support Files/Pods-kantu/Pods-kantu.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A19F9B461D3E0D0E008618B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8CE9253CD158F3CF5C4A3B /* libPods-kantu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F9B5F1D3E0D0F008618B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F9B6A1D3E0D0F008618B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4663801133EF7A232E4279F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C4DF0F4E99AED682ED2BF49 /* Pods-kantu.debug.xcconfig */,
+				A7A747B477FCD4CDC2ADEE1F /* Pods-kantu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A19F9B401D3E0D0D008618B5 = {
+			isa = PBXGroup;
+			children = (
+				A19F9B4B1D3E0D0F008618B5 /* kantu */,
+				A19F9B651D3E0D0F008618B5 /* kantuTests */,
+				A19F9B701D3E0D10008618B5 /* kantuUITests */,
+				A19F9B4A1D3E0D0E008618B5 /* Products */,
+				4663801133EF7A232E4279F0 /* Pods */,
+				F67EE16A4F21046BD688141B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A19F9B4A1D3E0D0E008618B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A19F9B491D3E0D0E008618B5 /* kantu.app */,
+				A19F9B621D3E0D0F008618B5 /* kantuTests.xctest */,
+				A19F9B6D1D3E0D10008618B5 /* kantuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A19F9B4B1D3E0D0F008618B5 /* kantu */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4DBAB1D45E40C00F9DBEF /* model */,
+				A19F9B7F1D3E24EC008618B5 /* cell */,
+				A1F4DBAF1D46121900F9DBEF /* vc */,
+				A19F9B4F1D3E0D0F008618B5 /* AppDelegate.h */,
+				A19F9B501D3E0D0F008618B5 /* AppDelegate.m */,
+				A19F9B521D3E0D0F008618B5 /* ViewController.h */,
+				A19F9B531D3E0D0F008618B5 /* ViewController.m */,
+				A19F9B551D3E0D0F008618B5 /* Main.storyboard */,
+				A19F9B581D3E0D0F008618B5 /* Assets.xcassets */,
+				A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */,
+				A19F9B5D1D3E0D0F008618B5 /* Info.plist */,
+				A19F9B4C1D3E0D0F008618B5 /* Supporting Files */,
+				A19F9B851D3E2F5F008618B5 /* constants.h */,
+				A19F9B861D3E2F87008618B5 /* PrefixHeader.pch */,
+			);
+			path = kantu;
+			sourceTree = "<group>";
+		};
+		A19F9B4C1D3E0D0F008618B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A19F9B4D1D3E0D0F008618B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A19F9B651D3E0D0F008618B5 /* kantuTests */ = {
+			isa = PBXGroup;
+			children = (
+				A19F9B661D3E0D0F008618B5 /* kantuTests.m */,
+				A19F9B681D3E0D0F008618B5 /* Info.plist */,
+			);
+			path = kantuTests;
+			sourceTree = "<group>";
+		};
+		A19F9B701D3E0D10008618B5 /* kantuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A19F9B711D3E0D10008618B5 /* kantuUITests.m */,
+				A19F9B731D3E0D10008618B5 /* Info.plist */,
+			);
+			path = kantuUITests;
+			sourceTree = "<group>";
+		};
+		A19F9B7F1D3E24EC008618B5 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A19F9B801D3E2529008618B5 /* IMCollectionViewCell.h */,
+				A19F9B811D3E2529008618B5 /* IMCollectionViewCell.m */,
+				A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		A1F4DBAB1D45E40C00F9DBEF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4DBAC1D45E44800F9DBEF /* IMGModel.h */,
+				A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		A1F4DBAF1D46121900F9DBEF /* vc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		F67EE16A4F21046BD688141B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A19F9B481D3E0D0E008618B5 /* kantu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19F9B761D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantu" */;
+			buildPhases = (
+				5557030D72A56FD935E267C6 /* [CP] Check Pods Manifest.lock */,
+				A19F9B451D3E0D0E008618B5 /* Sources */,
+				A19F9B461D3E0D0E008618B5 /* Frameworks */,
+				A19F9B471D3E0D0E008618B5 /* Resources */,
+				CB07C9016C1B6BAC1EE050D3 /* [CP] Embed Pods Frameworks */,
+				17FBDAA89BE653401750A436 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kantu;
+			productName = kantu;
+			productReference = A19F9B491D3E0D0E008618B5 /* kantu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A19F9B611D3E0D0F008618B5 /* kantuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19F9B791D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantuTests" */;
+			buildPhases = (
+				A19F9B5E1D3E0D0F008618B5 /* Sources */,
+				A19F9B5F1D3E0D0F008618B5 /* Frameworks */,
+				A19F9B601D3E0D0F008618B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19F9B641D3E0D0F008618B5 /* PBXTargetDependency */,
+			);
+			name = kantuTests;
+			productName = kantuTests;
+			productReference = A19F9B621D3E0D0F008618B5 /* kantuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A19F9B6C1D3E0D0F008618B5 /* kantuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19F9B7C1D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantuUITests" */;
+			buildPhases = (
+				A19F9B691D3E0D0F008618B5 /* Sources */,
+				A19F9B6A1D3E0D0F008618B5 /* Frameworks */,
+				A19F9B6B1D3E0D0F008618B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19F9B6F1D3E0D10008618B5 /* PBXTargetDependency */,
+			);
+			name = kantuUITests;
+			productName = kantuUITests;
+			productReference = A19F9B6D1D3E0D10008618B5 /* kantuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A19F9B411D3E0D0D008618B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Light;
+				TargetAttributes = {
+					A19F9B481D3E0D0E008618B5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A19F9B611D3E0D0F008618B5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A19F9B481D3E0D0E008618B5;
+					};
+					A19F9B6C1D3E0D0F008618B5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A19F9B481D3E0D0E008618B5;
+					};
+				};
+			};
+			buildConfigurationList = A19F9B441D3E0D0E008618B5 /* Build configuration list for PBXProject "kantu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A19F9B401D3E0D0D008618B5;
+			productRefGroup = A19F9B4A1D3E0D0E008618B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A19F9B481D3E0D0E008618B5 /* kantu */,
+				A19F9B611D3E0D0F008618B5 /* kantuTests */,
+				A19F9B6C1D3E0D0F008618B5 /* kantuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A19F9B471D3E0D0E008618B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19F9B5C1D3E0D0F008618B5 /* LaunchScreen.storyboard in Resources */,
+				A19F9B591D3E0D0F008618B5 /* Assets.xcassets in Resources */,
+				A19F9B841D3E2529008618B5 /* IMCollectionViewCell.xib in Resources */,
+				A19F9B571D3E0D0F008618B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F9B601D3E0D0F008618B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F9B6B1D3E0D0F008618B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17FBDAA89BE653401750A436 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kantu/Pods-kantu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5557030D72A56FD935E267C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB07C9016C1B6BAC1EE050D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kantu/Pods-kantu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A19F9B451D3E0D0E008618B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F4DBAE1D45E44800F9DBEF /* IMGModel.m in Sources */,
+				A19F9B541D3E0D0F008618B5 /* ViewController.m in Sources */,
+				A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */,
+				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
+				A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F9B5E1D3E0D0F008618B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19F9B671D3E0D0F008618B5 /* kantuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19F9B691D3E0D0F008618B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19F9B721D3E0D10008618B5 /* kantuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A19F9B641D3E0D0F008618B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19F9B481D3E0D0E008618B5 /* kantu */;
+			targetProxy = A19F9B631D3E0D0F008618B5 /* PBXContainerItemProxy */;
+		};
+		A19F9B6F1D3E0D10008618B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19F9B481D3E0D0E008618B5 /* kantu */;
+			targetProxy = A19F9B6E1D3E0D10008618B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A19F9B551D3E0D0F008618B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19F9B561D3E0D0F008618B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19F9B5B1D3E0D0F008618B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A19F9B741D3E0D10008618B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A19F9B751D3E0D10008618B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A19F9B771D3E0D10008618B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4DF0F4E99AED682ED2BF49 /* Pods-kantu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = kantu/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = kantu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A19F9B781D3E0D10008618B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A747B477FCD4CDC2ADEE1F /* Pods-kantu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = kantu/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = kantu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A19F9B7A1D3E0D10008618B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kantuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kantu.app/kantu";
+			};
+			name = Debug;
+		};
+		A19F9B7B1D3E0D10008618B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kantuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kantu.app/kantu";
+			};
+			name = Release;
+		};
+		A19F9B7D1D3E0D10008618B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kantuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kantu;
+			};
+			name = Debug;
+		};
+		A19F9B7E1D3E0D10008618B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kantuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kantu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A19F9B441D3E0D0E008618B5 /* Build configuration list for PBXProject "kantu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19F9B741D3E0D10008618B5 /* Debug */,
+				A19F9B751D3E0D10008618B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19F9B761D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19F9B771D3E0D10008618B5 /* Debug */,
+				A19F9B781D3E0D10008618B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19F9B791D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19F9B7A1D3E0D10008618B5 /* Debug */,
+				A19F9B7B1D3E0D10008618B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19F9B7C1D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19F9B7D1D3E0D10008618B5 /* Debug */,
+				A19F9B7E1D3E0D10008618B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A19F9B411D3E0D0D008618B5 /* Project object */;
+}
