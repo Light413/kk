@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "IMGModel.h"
 
-@interface ViewController : UIViewController
+@interface IMGCollectionVC : UIViewController
 
 
 @end

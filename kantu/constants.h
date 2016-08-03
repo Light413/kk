@@ -11,5 +11,6 @@
 
 #define IMGFilePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"imgcache"]
 
+#define DefaultBgColor [UIColor colorWithRed:0.957 green:0.961 blue:0.965 alpha:1]
 
 #endif /* constants_h */

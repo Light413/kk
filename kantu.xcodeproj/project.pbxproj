@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13C91231D509A8200CBBBFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C91221D509A8200CBBBFF /* BaseViewController.m */; };
+		A18054901D51923100DDCD36 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A180548F1D51923100DDCD36 /* HomeVC.m */; };
+		A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054921D51B9E200DDCD36 /* BaseNavigationController.m */; };
+		A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054951D51C17900DDCD36 /* AlbumListVC.m */; };
+		A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054991D51E35100DDCD36 /* KKDateFormatter.m */; };
 		A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B4D1D3E0D0F008618B5 /* main.m */; };
 		A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B501D3E0D0F008618B5 /* AppDelegate.m */; };
-		A19F9B541D3E0D0F008618B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B531D3E0D0F008618B5 /* ViewController.m */; };
+		A19F9B541D3E0D0F008618B5 /* IMGCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */; };
 		A19F9B571D3E0D0F008618B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B551D3E0D0F008618B5 /* Main.storyboard */; };
 		A19F9B591D3E0D0F008618B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B581D3E0D0F008618B5 /* Assets.xcassets */; };
 		A19F9B5C1D3E0D0F008618B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */; };
@@ -41,12 +46,22 @@
 /* Begin PBXFileReference section */
 		0C4DF0F4E99AED682ED2BF49 /* Pods-kantu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kantu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kantu/Pods-kantu.debug.xcconfig"; sourceTree = "<group>"; };
 		3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kantu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13C91211D509A8200CBBBFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A13C91221D509A8200CBBBFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A180548E1D51923100DDCD36 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		A180548F1D51923100DDCD36 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		A18054911D51B9E200DDCD36 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		A18054921D51B9E200DDCD36 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		A18054941D51C17900DDCD36 /* AlbumListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumListVC.h; sourceTree = "<group>"; };
+		A18054951D51C17900DDCD36 /* AlbumListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListVC.m; sourceTree = "<group>"; };
+		A18054981D51E35100DDCD36 /* KKDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDateFormatter.h; sourceTree = "<group>"; };
+		A18054991D51E35100DDCD36 /* KKDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDateFormatter.m; sourceTree = "<group>"; };
 		A19F9B491D3E0D0E008618B5 /* kantu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kantu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F9B4D1D3E0D0F008618B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A19F9B4F1D3E0D0F008618B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A19F9B501D3E0D0F008618B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A19F9B521D3E0D0F008618B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A19F9B531D3E0D0F008618B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A19F9B521D3E0D0F008618B5 /* IMGCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMGCollectionVC.h; sourceTree = "<group>"; };
+		A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMGCollectionVC.m; sourceTree = "<group>"; };
 		A19F9B561D3E0D0F008618B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A19F9B581D3E0D0F008618B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19F9B5B1D3E0D0F008618B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,9 +117,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A18054971D51E2BB00DDCD36 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				A18054981D51E35100DDCD36 /* KKDateFormatter.h */,
+				A18054991D51E35100DDCD36 /* KKDateFormatter.m */,
+			);
+			name = tool;
+			sourceTree = "<group>";
+		};
 		A19F9B401D3E0D0D008618B5 = {
 			isa = PBXGroup;
 			children = (
+				A18054971D51E2BB00DDCD36 /* tool */,
 				A19F9B4B1D3E0D0F008618B5 /* kantu */,
 				A19F9B651D3E0D0F008618B5 /* kantuTests */,
 				A19F9B701D3E0D10008618B5 /* kantuUITests */,
@@ -132,15 +157,7 @@
 				A1F4DBAF1D46121900F9DBEF /* vc */,
 				A19F9B4F1D3E0D0F008618B5 /* AppDelegate.h */,
 				A19F9B501D3E0D0F008618B5 /* AppDelegate.m */,
-				A19F9B521D3E0D0F008618B5 /* ViewController.h */,
-				A19F9B531D3E0D0F008618B5 /* ViewController.m */,
-				A19F9B551D3E0D0F008618B5 /* Main.storyboard */,
-				A19F9B581D3E0D0F008618B5 /* Assets.xcassets */,
-				A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */,
-				A19F9B5D1D3E0D0F008618B5 /* Info.plist */,
 				A19F9B4C1D3E0D0F008618B5 /* Supporting Files */,
-				A19F9B851D3E2F5F008618B5 /* constants.h */,
-				A19F9B861D3E2F87008618B5 /* PrefixHeader.pch */,
 			);
 			path = kantu;
 			sourceTree = "<group>";
@@ -148,7 +165,13 @@
 		A19F9B4C1D3E0D0F008618B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A19F9B551D3E0D0F008618B5 /* Main.storyboard */,
+				A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */,
+				A19F9B581D3E0D0F008618B5 /* Assets.xcassets */,
 				A19F9B4D1D3E0D0F008618B5 /* main.m */,
+				A19F9B5D1D3E0D0F008618B5 /* Info.plist */,
+				A19F9B851D3E2F5F008618B5 /* constants.h */,
+				A19F9B861D3E2F87008618B5 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,6 +216,16 @@
 		A1F4DBAF1D46121900F9DBEF /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				A13C91211D509A8200CBBBFF /* BaseViewController.h */,
+				A13C91221D509A8200CBBBFF /* BaseViewController.m */,
+				A18054911D51B9E200DDCD36 /* BaseNavigationController.h */,
+				A18054921D51B9E200DDCD36 /* BaseNavigationController.m */,
+				A180548E1D51923100DDCD36 /* HomeVC.h */,
+				A180548F1D51923100DDCD36 /* HomeVC.m */,
+				A18054941D51C17900DDCD36 /* AlbumListVC.h */,
+				A18054951D51C17900DDCD36 /* AlbumListVC.m */,
+				A19F9B521D3E0D0F008618B5 /* IMGCollectionVC.h */,
+				A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -388,9 +421,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F4DBAE1D45E44800F9DBEF /* IMGModel.m in Sources */,
-				A19F9B541D3E0D0F008618B5 /* ViewController.m in Sources */,
+				A13C91231D509A8200CBBBFF /* BaseViewController.m in Sources */,
+				A19F9B541D3E0D0F008618B5 /* IMGCollectionVC.m in Sources */,
+				A18054901D51923100DDCD36 /* HomeVC.m in Sources */,
+				A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */,
+				A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */,
 				A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */,
 				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
+				A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */,
 				A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

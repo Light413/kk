@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BaseNavigationController.h"
+#import "HomeVC.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.backgroundColor  = [UIColor whiteColor];
+
+     BaseNavigationController*_nav = [[BaseNavigationController alloc]initWithRootViewController:[[HomeVC alloc]init]];
+    self.window.rootViewController = _nav;
+    [self.window makeKeyAndVisible];
+
+    NSLog(@"dir : %@",NSHomeDirectory());
     return YES;
 }
 

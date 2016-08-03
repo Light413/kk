@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Light. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "IMGCollectionVC.h"
 #import "IMCollectionViewCell.h"
 
 #define CURRNET_SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
 #define CURRENT_SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
 
-@interface ViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface IMGCollectionVC ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 {
     UICollectionView *_collectionView;
     
@@ -23,12 +23,28 @@
 }
 @end
 
-@implementation ViewController
+@implementation IMGCollectionVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationController.navigationBar.translucent = NO;
+
+    [self initSubviews];
+
+    _helper = [LKDBHelper getUsingLKDBHelper];
+    _dataArray = [[NSMutableArray alloc]init];
+    
+    [self loadData];
+}
+
+-(void)initSubviews
+{
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 50, 50);
+    btn.selected = NO;
+    [btn setTitle:@"编辑" forState:UIControlStateNormal];
+    [btn addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBtnAction:)];
     
     UICollectionViewFlowLayout *_layout = [[UICollectionViewFlowLayout alloc]init];
     _layout.minimumLineSpacing = 8;
@@ -41,13 +57,7 @@
     _collectionView.dataSource =self;
     _collectionView.backgroundColor  =[UIColor whiteColor];
     [_collectionView registerNib:[UINib nibWithNibName:@"IMCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"IMCollectionViewCellIdentifier"];
-    
     [self.view addSubview:_collectionView];
-    
-    _helper = [LKDBHelper getUsingLKDBHelper];
-    _dataArray = [[NSMutableArray alloc]init];
-    
-    [self loadData];
 }
 
 -(void)loadData
@@ -63,7 +73,7 @@
 }
 
 
-- (IBAction)addBtnAction:(id)sender {
+- (void)addBtnAction:(id)sender {
     
     UIImagePickerController *_picker = [[UIImagePickerController alloc]init];
     _picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
