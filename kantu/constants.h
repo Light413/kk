@@ -13,4 +13,18 @@
 
 #define DefaultBgColor [UIColor colorWithRed:0.957 green:0.961 blue:0.965 alpha:1]
 
+
+
+#define CURRNET_SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
+#define CURRENT_SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
+
+
+
+
+
+
+
+
+
+
 #endif /* constants_h */

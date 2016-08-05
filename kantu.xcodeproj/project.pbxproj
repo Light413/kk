@@ -12,6 +12,7 @@
 		A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054921D51B9E200DDCD36 /* BaseNavigationController.m */; };
 		A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054951D51C17900DDCD36 /* AlbumListVC.m */; };
 		A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054991D51E35100DDCD36 /* KKDateFormatter.m */; };
+		A19C4A1C1D53246100E8F9EC /* IMGPreViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19C4A1B1D53246100E8F9EC /* IMGPreViewVC.m */; };
 		A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B4D1D3E0D0F008618B5 /* main.m */; };
 		A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B501D3E0D0F008618B5 /* AppDelegate.m */; };
 		A19F9B541D3E0D0F008618B5 /* IMGCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */; };
@@ -56,6 +57,8 @@
 		A18054951D51C17900DDCD36 /* AlbumListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListVC.m; sourceTree = "<group>"; };
 		A18054981D51E35100DDCD36 /* KKDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDateFormatter.h; sourceTree = "<group>"; };
 		A18054991D51E35100DDCD36 /* KKDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDateFormatter.m; sourceTree = "<group>"; };
+		A19C4A1A1D53246100E8F9EC /* IMGPreViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGPreViewVC.h; sourceTree = "<group>"; };
+		A19C4A1B1D53246100E8F9EC /* IMGPreViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGPreViewVC.m; sourceTree = "<group>"; };
 		A19F9B491D3E0D0E008618B5 /* kantu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kantu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F9B4D1D3E0D0F008618B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A19F9B4F1D3E0D0F008618B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 				A18054951D51C17900DDCD36 /* AlbumListVC.m */,
 				A19F9B521D3E0D0F008618B5 /* IMGCollectionVC.h */,
 				A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */,
+				A19C4A1A1D53246100E8F9EC /* IMGPreViewVC.h */,
+				A19C4A1B1D53246100E8F9EC /* IMGPreViewVC.m */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
 				A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */,
 				A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */,
+				A19C4A1C1D53246100E8F9EC /* IMGPreViewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,7 @@
 
 #import "IMGCollectionVC.h"
 #import "IMCollectionViewCell.h"
-
-#define CURRNET_SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
-#define CURRENT_SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
+#import "IMGPreViewVC.h"
 
 @interface IMGCollectionVC ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 {
@@ -39,17 +37,14 @@
 
 -(void)initSubviews
 {
-    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 50, 50);
-    btn.selected = NO;
-    [btn setTitle:@"编辑" forState:UIControlStateNormal];
-    [btn addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
+    self.title = self.albumNAME;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBtnAction:)];
     
     UICollectionViewFlowLayout *_layout = [[UICollectionViewFlowLayout alloc]init];
     _layout.minimumLineSpacing = 8;
-    _layout.minimumInteritemSpacing = 5;
-    _layout.itemSize = CGSizeMake((CURRNET_SCREEN_WIDTH - 30)/2.0, (CURRNET_SCREEN_WIDTH - 30)/2.0);
+    _layout.minimumInteritemSpacing = 5;//96/128
+    float _w = (CURRNET_SCREEN_WIDTH - 30)/2.0;
+    _layout.itemSize = CGSizeMake(_w, _w*4 / 3.0);
     
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, CURRNET_SCREEN_WIDTH, CURRENT_SCREEN_HEIGHT - 64) collectionViewLayout:_layout];
     _collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
@@ -64,7 +59,7 @@
 {
     [_dataArray removeAllObjects];
     
-    NSArray *_arr = [_helper search:[IMGModel class] where:nil orderBy:@"imgName desc" offset:0 count:INT16_MAX];
+    NSArray *_arr = [_helper search:[IMGModel class] where:[NSString stringWithFormat:@"albumID = '%@'",self.albumID] orderBy:@"imgName desc" offset:0 count:INT16_MAX];
     if (_arr.count > 0) {
         [_dataArray addObjectsFromArray:_arr];
     }
@@ -98,11 +93,17 @@
     IMCollectionViewCell *_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"IMCollectionViewCellIdentifier" forIndexPath:indexPath];
     IMGModel *_m = [_dataArray objectAtIndex:indexPath.row];
     NSString *_imgPath = [NSString stringWithFormat:@"%@/%@",IMGFilePath,_m.imgName];
-    
-//    _cell.backgroundColor = [UIColor redColor];
+
     _cell.imgView.image = [[UIImage alloc]initWithContentsOfFile:_imgPath];
     return _cell;
 }
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    IMGPreViewVC * vc = [[IMGPreViewVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 //{
 //    UIImagePickerControllerCropRect = "NSRect: {{0, 0}, {640, 634}}";
@@ -144,12 +145,14 @@
         addM.imgDate = _m.imgDate;
         addM.imgName = [NSString stringWithFormat:@"%@_%ld.png",_m.imgDate,[_m.imgNumber integerValue]+1];
         addM.imgNumber = [NSString stringWithFormat:@"%ld",[_m.imgNumber integerValue]+1];
+        addM.albumID = self.albumID;
     }
     else
     {
         addM.imgDate = time;
         addM.imgName = [NSString stringWithFormat:@"%@_%d.png",time,0];
         addM.imgNumber = [NSString stringWithFormat:@"%d",0];
+        addM.albumID = self.albumID;
     }
     [_helper insertToDB:addM];
     

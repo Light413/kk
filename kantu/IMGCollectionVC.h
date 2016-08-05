@@ -11,6 +11,9 @@
 
 @interface IMGCollectionVC : UIViewController
 
+@property(nonatomic,copy)NSString * albumID;
+
+@property(nonatomic,copy)NSString * albumNAME;
 
 @end
 

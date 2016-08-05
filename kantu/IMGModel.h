@@ -12,5 +12,6 @@
 @property(nonatomic,copy)NSString * imgName;//imgDate + imgNumber
 @property(nonatomic,copy)NSString * imgDate;
 @property(nonatomic,copy)NSString * imgNumber;
+@property(nonatomic,copy)NSString * albumID;
 
 @end

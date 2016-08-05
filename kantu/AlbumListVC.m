@@ -103,6 +103,7 @@
             
             NSArray *_arr = [_helper search:[AlbumModel class] where:nil orderBy:@"DATE desc" offset:0 count:100];
             if (_arr.count  > 0) {
+                [_dataArray removeAllObjects];
                 [_dataArray addObjectsFromArray:_arr];
                 [self.tableView reloadData];
             }
@@ -141,7 +142,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController * _vc = [[IMGCollectionVC alloc]init];
+    AlbumModel *_m = _dataArray[indexPath.row];
+    IMGCollectionVC * _vc = [[IMGCollectionVC alloc]init];
+    _vc.albumNAME = _m.NAME;
+    _vc.albumID = _m.ID;
+    
     [self.navigationController pushViewController:_vc animated:YES];
 }
 
@@ -163,6 +168,7 @@
         // Delete the row from the data source
         AlbumModel *m = _dataArray[indexPath.row];
         //...删除该相册下图片
+        [self deleteFileWithAlbumID:m.ID];
         [_helper deleteWithClass:[AlbumModel class] where:[NSString stringWithFormat:@"ID = '%@'",m.ID]];
          
         [_dataArray removeObjectAtIndex:indexPath.row];
@@ -173,6 +179,17 @@
     }   
 }
 
+-(void)deleteFileWithAlbumID:(NSString*)ID
+{
+    NSArray *_arr = [_helper search:[IMGModel class] where:[NSString stringWithFormat:@"albumID = '%@'",ID] orderBy:nil offset:0 count:INT16_MAX];
+    for (int i =0; i < _arr.count; i++) {
+        IMGModel *_m = [_arr objectAtIndex:i];
+        NSString *_imgPath = [NSString stringWithFormat:@"%@/%@",IMGFilePath,_m.imgName];
+        
+        [[NSFileManager defaultManager]removeItemAtPath:_imgPath error:nil];
+        [_helper deleteToDB:_m];
+    }
+}
 
 /*
 // Override to support rearranging the table view.
