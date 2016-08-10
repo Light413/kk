@@ -12,7 +12,7 @@
 		A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054921D51B9E200DDCD36 /* BaseNavigationController.m */; };
 		A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054951D51C17900DDCD36 /* AlbumListVC.m */; };
 		A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054991D51E35100DDCD36 /* KKDateFormatter.m */; };
-		A19C4A1C1D53246100E8F9EC /* IMGPreViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19C4A1B1D53246100E8F9EC /* IMGPreViewVC.m */; };
+		A19906AD1D588B64007C2B15 /* IMGBigPicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19906AC1D588B64007C2B15 /* IMGBigPicVC.m */; };
 		A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B4D1D3E0D0F008618B5 /* main.m */; };
 		A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B501D3E0D0F008618B5 /* AppDelegate.m */; };
 		A19F9B541D3E0D0F008618B5 /* IMGCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */; };
@@ -23,6 +23,9 @@
 		A19F9B721D3E0D10008618B5 /* kantuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B711D3E0D10008618B5 /* kantuUITests.m */; };
 		A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B811D3E2529008618B5 /* IMCollectionViewCell.m */; };
 		A19F9B841D3E2529008618B5 /* IMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */; };
+		A1D4A4D41D589082008861CA /* IMGBigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4A4D21D589082008861CA /* IMGBigCell.m */; };
+		A1D4A4D51D589082008861CA /* IMGBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D4A4D31D589082008861CA /* IMGBigCell.xib */; };
+		A1F357481D5B109D0053A4FE /* menulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F357471D5B109D0053A4FE /* menulist.plist */; };
 		A1F4DBAE1D45E44800F9DBEF /* IMGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */; };
 		AE8CE9253CD158F3CF5C4A3B /* libPods-kantu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */; };
 /* End PBXBuildFile section */
@@ -57,8 +60,8 @@
 		A18054951D51C17900DDCD36 /* AlbumListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListVC.m; sourceTree = "<group>"; };
 		A18054981D51E35100DDCD36 /* KKDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDateFormatter.h; sourceTree = "<group>"; };
 		A18054991D51E35100DDCD36 /* KKDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDateFormatter.m; sourceTree = "<group>"; };
-		A19C4A1A1D53246100E8F9EC /* IMGPreViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGPreViewVC.h; sourceTree = "<group>"; };
-		A19C4A1B1D53246100E8F9EC /* IMGPreViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGPreViewVC.m; sourceTree = "<group>"; };
+		A19906AB1D588B64007C2B15 /* IMGBigPicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGBigPicVC.h; sourceTree = "<group>"; };
+		A19906AC1D588B64007C2B15 /* IMGBigPicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGBigPicVC.m; sourceTree = "<group>"; };
 		A19F9B491D3E0D0E008618B5 /* kantu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kantu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F9B4D1D3E0D0F008618B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A19F9B4F1D3E0D0F008618B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,10 @@
 		A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMCollectionViewCell.xib; sourceTree = "<group>"; };
 		A19F9B851D3E2F5F008618B5 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		A19F9B861D3E2F87008618B5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A1D4A4D11D589082008861CA /* IMGBigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGBigCell.h; sourceTree = "<group>"; };
+		A1D4A4D21D589082008861CA /* IMGBigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGBigCell.m; sourceTree = "<group>"; };
+		A1D4A4D31D589082008861CA /* IMGBigCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMGBigCell.xib; sourceTree = "<group>"; };
+		A1F357471D5B109D0053A4FE /* menulist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menulist.plist; sourceTree = "<group>"; };
 		A1F4DBAC1D45E44800F9DBEF /* IMGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGModel.h; sourceTree = "<group>"; };
 		A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGModel.m; sourceTree = "<group>"; };
 		A7A747B477FCD4CDC2ADEE1F /* Pods-kantu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kantu.release.xcconfig"; path = "Pods/Target Support Files/Pods-kantu/Pods-kantu.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +182,7 @@
 				A19F9B5D1D3E0D0F008618B5 /* Info.plist */,
 				A19F9B851D3E2F5F008618B5 /* constants.h */,
 				A19F9B861D3E2F87008618B5 /* PrefixHeader.pch */,
+				A1F357471D5B109D0053A4FE /* menulist.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,15 +211,42 @@
 				A19F9B801D3E2529008618B5 /* IMCollectionViewCell.h */,
 				A19F9B811D3E2529008618B5 /* IMCollectionViewCell.m */,
 				A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */,
+				A1D4A4D11D589082008861CA /* IMGBigCell.h */,
+				A1D4A4D21D589082008861CA /* IMGBigCell.m */,
+				A1D4A4D31D589082008861CA /* IMGBigCell.xib */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		A1F357461D5B0E610053A4FE /* photoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4DBAC1D45E44800F9DBEF /* IMGModel.h */,
+				A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */,
+				A18054941D51C17900DDCD36 /* AlbumListVC.h */,
+				A18054951D51C17900DDCD36 /* AlbumListVC.m */,
+				A19F9B521D3E0D0F008618B5 /* IMGCollectionVC.h */,
+				A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */,
+				A19906AB1D588B64007C2B15 /* IMGBigPicVC.h */,
+				A19906AC1D588B64007C2B15 /* IMGBigPicVC.m */,
+			);
+			name = photoBrowser;
+			sourceTree = "<group>";
+		};
+		A1F357491D5B333D0053A4FE /* baseVC */ = {
+			isa = PBXGroup;
+			children = (
+				A13C91211D509A8200CBBBFF /* BaseViewController.h */,
+				A13C91221D509A8200CBBBFF /* BaseViewController.m */,
+				A18054911D51B9E200DDCD36 /* BaseNavigationController.h */,
+				A18054921D51B9E200DDCD36 /* BaseNavigationController.m */,
+			);
+			name = baseVC;
 			sourceTree = "<group>";
 		};
 		A1F4DBAB1D45E40C00F9DBEF /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A1F4DBAC1D45E44800F9DBEF /* IMGModel.h */,
-				A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -219,18 +254,10 @@
 		A1F4DBAF1D46121900F9DBEF /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				A13C91211D509A8200CBBBFF /* BaseViewController.h */,
-				A13C91221D509A8200CBBBFF /* BaseViewController.m */,
-				A18054911D51B9E200DDCD36 /* BaseNavigationController.h */,
-				A18054921D51B9E200DDCD36 /* BaseNavigationController.m */,
+				A1F357491D5B333D0053A4FE /* baseVC */,
+				A1F357461D5B0E610053A4FE /* photoBrowser */,
 				A180548E1D51923100DDCD36 /* HomeVC.h */,
 				A180548F1D51923100DDCD36 /* HomeVC.m */,
-				A18054941D51C17900DDCD36 /* AlbumListVC.h */,
-				A18054951D51C17900DDCD36 /* AlbumListVC.m */,
-				A19F9B521D3E0D0F008618B5 /* IMGCollectionVC.h */,
-				A19F9B531D3E0D0F008618B5 /* IMGCollectionVC.m */,
-				A19C4A1A1D53246100E8F9EC /* IMGPreViewVC.h */,
-				A19C4A1B1D53246100E8F9EC /* IMGPreViewVC.m */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -350,8 +377,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19F9B5C1D3E0D0F008618B5 /* LaunchScreen.storyboard in Resources */,
+				A1F357481D5B109D0053A4FE /* menulist.plist in Resources */,
 				A19F9B591D3E0D0F008618B5 /* Assets.xcassets in Resources */,
 				A19F9B841D3E2529008618B5 /* IMCollectionViewCell.xib in Resources */,
+				A1D4A4D51D589082008861CA /* IMGBigCell.xib in Resources */,
 				A19F9B571D3E0D0F008618B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,13 +458,14 @@
 				A13C91231D509A8200CBBBFF /* BaseViewController.m in Sources */,
 				A19F9B541D3E0D0F008618B5 /* IMGCollectionVC.m in Sources */,
 				A18054901D51923100DDCD36 /* HomeVC.m in Sources */,
+				A19906AD1D588B64007C2B15 /* IMGBigPicVC.m in Sources */,
 				A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */,
 				A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */,
 				A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */,
 				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
 				A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */,
+				A1D4A4D41D589082008861CA /* IMGBigCell.m in Sources */,
 				A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */,
-				A19C4A1C1D53246100E8F9EC /* IMGPreViewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

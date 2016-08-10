@@ -8,8 +8,8 @@
 
 #import "IMGCollectionVC.h"
 #import "IMCollectionViewCell.h"
-#import "IMGPreViewVC.h"
-
+#import "IMGBigPicVC.h"
+#import "BaseNavigationController.h"
 @interface IMGCollectionVC ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 {
     UICollectionView *_collectionView;
@@ -46,7 +46,7 @@
     float _w = (CURRNET_SCREEN_WIDTH - 30)/2.0;
     _layout.itemSize = CGSizeMake(_w, _w*4 / 3.0);
     
-    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, CURRNET_SCREEN_WIDTH, CURRENT_SCREEN_HEIGHT - 64) collectionViewLayout:_layout];
+    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, CURRNET_SCREEN_WIDTH, CURRENT_SCREEN_HEIGHT) collectionViewLayout:_layout];
     _collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
     _collectionView.delegate  =self;
     _collectionView.dataSource =self;
@@ -100,8 +100,14 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    IMGPreViewVC * vc = [[IMGPreViewVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    IMGBigPicVC * vc = [[IMGBigPicVC alloc]init];
+    vc.dataArray = _dataArray;
+    vc.selectIndex = indexPath.row;
+    
+    BaseNavigationController*_navigationVC = [[BaseNavigationController alloc]initWithRootViewController:vc];
+    [self presentViewController:_navigationVC animated:YES completion:^{
+        
+    }];
 }
 
 
