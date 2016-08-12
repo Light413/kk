@@ -130,8 +130,27 @@
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
-    return scrollView.subviews[0];
+    if (scrollView != _collectionView) {
+        return scrollView.subviews[0];
+    }
+    return nil;
 }
+
+//- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+//{
+//    if (scrollView != _collectionView) {
+//        UIImageView * _v = scrollView.subviews[0];
+//        UIImage *_img = _v.image;
+//        
+//        //....
+//        float imgScale = _img.size.width * 1.0 / _img.size.height;
+//        if (imgScale > 1) {
+////            scrollView.contentSize = CGSizeMake(scrollView.contentSize.width, CURRENT_SCREEN_HEIGHT );
+////            [scrollView setContentOffset:CGPointMake(0, 0)];
+//        }
+//    }
+//}
+
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {

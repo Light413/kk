@@ -12,6 +12,9 @@
 		A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054921D51B9E200DDCD36 /* BaseNavigationController.m */; };
 		A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054951D51C17900DDCD36 /* AlbumListVC.m */; };
 		A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054991D51E35100DDCD36 /* KKDateFormatter.m */; };
+		A18C91461D5D62E300FD12C3 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C91451D5D62E300FD12C3 /* MusicViewController.m */; };
+		A18C91481D5D634700FD12C3 /* 梁静茹-偶阵雨.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A18C91471D5D634700FD12C3 /* 梁静茹-偶阵雨.mp3 */; };
+		A18C914A1D5D6B0500FD12C3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18C91491D5D6B0500FD12C3 /* AVFoundation.framework */; };
 		A19906AD1D588B64007C2B15 /* IMGBigPicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A19906AC1D588B64007C2B15 /* IMGBigPicVC.m */; };
 		A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B4D1D3E0D0F008618B5 /* main.m */; };
 		A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B501D3E0D0F008618B5 /* AppDelegate.m */; };
@@ -60,6 +63,10 @@
 		A18054951D51C17900DDCD36 /* AlbumListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListVC.m; sourceTree = "<group>"; };
 		A18054981D51E35100DDCD36 /* KKDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDateFormatter.h; sourceTree = "<group>"; };
 		A18054991D51E35100DDCD36 /* KKDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDateFormatter.m; sourceTree = "<group>"; };
+		A18C91441D5D62E300FD12C3 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		A18C91451D5D62E300FD12C3 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		A18C91471D5D634700FD12C3 /* 梁静茹-偶阵雨.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "梁静茹-偶阵雨.mp3"; sourceTree = "<group>"; };
+		A18C91491D5D6B0500FD12C3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A19906AB1D588B64007C2B15 /* IMGBigPicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGBigPicVC.h; sourceTree = "<group>"; };
 		A19906AC1D588B64007C2B15 /* IMGBigPicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGBigPicVC.m; sourceTree = "<group>"; };
 		A19F9B491D3E0D0E008618B5 /* kantu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kantu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18C914A1D5D6B0500FD12C3 /* AVFoundation.framework in Frameworks */,
 				AE8CE9253CD158F3CF5C4A3B /* libPods-kantu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +183,7 @@
 		A19F9B4C1D3E0D0F008618B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A18C91471D5D634700FD12C3 /* 梁静茹-偶阵雨.mp3 */,
 				A19F9B551D3E0D0F008618B5 /* Main.storyboard */,
 				A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */,
 				A19F9B581D3E0D0F008618B5 /* Assets.xcassets */,
@@ -258,6 +267,8 @@
 				A1F357461D5B0E610053A4FE /* photoBrowser */,
 				A180548E1D51923100DDCD36 /* HomeVC.h */,
 				A180548F1D51923100DDCD36 /* HomeVC.m */,
+				A18C91441D5D62E300FD12C3 /* MusicViewController.h */,
+				A18C91451D5D62E300FD12C3 /* MusicViewController.m */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -265,6 +276,7 @@
 		F67EE16A4F21046BD688141B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A18C91491D5D6B0500FD12C3 /* AVFoundation.framework */,
 				3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */,
 			);
 			name = Frameworks;
@@ -378,6 +390,7 @@
 			files = (
 				A19F9B5C1D3E0D0F008618B5 /* LaunchScreen.storyboard in Resources */,
 				A1F357481D5B109D0053A4FE /* menulist.plist in Resources */,
+				A18C91481D5D634700FD12C3 /* 梁静茹-偶阵雨.mp3 in Resources */,
 				A19F9B591D3E0D0F008618B5 /* Assets.xcassets in Resources */,
 				A19F9B841D3E2529008618B5 /* IMCollectionViewCell.xib in Resources */,
 				A1D4A4D51D589082008861CA /* IMGBigCell.xib in Resources */,
@@ -462,6 +475,7 @@
 				A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */,
 				A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */,
 				A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */,
+				A18C91461D5D62E300FD12C3 /* MusicViewController.m in Sources */,
 				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
 				A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */,
 				A1D4A4D41D589082008861CA /* IMGBigCell.m in Sources */,

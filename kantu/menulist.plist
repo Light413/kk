@@ -8,5 +8,11 @@
 		<key>ID</key>
 		<string>photoBrowserId</string>
 	</dict>
+	<dict>
+		<key>TITLE</key>
+		<string>music</string>
+		<key>ID</key>
+		<string>musicId</string>
+	</dict>
 </array>
 </plist>

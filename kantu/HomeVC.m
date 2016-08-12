@@ -8,12 +8,13 @@
 
 #import "HomeVC.h"
 #import "AlbumListVC.h"
-
+#import "MusicViewController.h"
 
 @interface HomeVC ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSArray * _dataArray;
 }
+
 @end
 
 @implementation HomeVC
@@ -90,6 +91,11 @@
     
     if ([_identifier isEqualToString:@"photoBrowserId"]) {
         UIViewController * vc = [[AlbumListVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if ([_identifier isEqualToString:@"musicId"])
+    {
+        UIViewController * vc = [[MusicViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

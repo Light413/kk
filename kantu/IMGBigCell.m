@@ -15,7 +15,6 @@
     // Initialization code
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.imageView.userInteractionEnabled = YES;
-    
 //    UIPinchGestureRecognizer *_pinch = [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
 //    [self.imageView addGestureRecognizer:_pinch];
     
