@@ -4,7 +4,13 @@
 <array>
 	<dict>
 		<key>TITLE</key>
-		<string>photoBrowser</string>
+		<string>afn</string>
+		<key>ID</key>
+		<string>afnId</string>
+	</dict>
+	<dict>
+		<key>TITLE</key>
+		<string>photo</string>
 		<key>ID</key>
 		<string>photoBrowserId</string>
 	</dict>

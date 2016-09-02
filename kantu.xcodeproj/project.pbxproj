@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A13C91231D509A8200CBBBFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C91221D509A8200CBBBFF /* BaseViewController.m */; };
+		A159AA901D76C0EF00C5E97D /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A159AA8F1D76C0EF00C5E97D /* TestVC.m */; };
 		A18054901D51923100DDCD36 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A180548F1D51923100DDCD36 /* HomeVC.m */; };
 		A18054931D51B9E200DDCD36 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054921D51B9E200DDCD36 /* BaseNavigationController.m */; };
 		A18054961D51C17900DDCD36 /* AlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A18054951D51C17900DDCD36 /* AlbumListVC.m */; };
@@ -55,6 +56,8 @@
 		3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kantu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13C91211D509A8200CBBBFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A13C91221D509A8200CBBBFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A159AA8E1D76C0EE00C5E97D /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		A159AA8F1D76C0EF00C5E97D /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		A180548E1D51923100DDCD36 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		A180548F1D51923100DDCD36 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		A18054911D51B9E200DDCD36 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 				A180548F1D51923100DDCD36 /* HomeVC.m */,
 				A18C91441D5D62E300FD12C3 /* MusicViewController.h */,
 				A18C91451D5D62E300FD12C3 /* MusicViewController.m */,
+				A159AA8E1D76C0EE00C5E97D /* TestVC.h */,
+				A159AA8F1D76C0EF00C5E97D /* TestVC.m */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				A19F9B511D3E0D0F008618B5 /* AppDelegate.m in Sources */,
 				A18C91461D5D62E300FD12C3 /* MusicViewController.m in Sources */,
 				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
+				A159AA901D76C0EF00C5E97D /* TestVC.m in Sources */,
 				A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */,
 				A1D4A4D41D589082008861CA /* IMGBigCell.m in Sources */,
 				A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */,
