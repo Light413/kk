@@ -24,25 +24,18 @@
 		A19F9B591D3E0D0F008618B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B581D3E0D0F008618B5 /* Assets.xcassets */; };
 		A19F9B5C1D3E0D0F008618B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B5A1D3E0D0F008618B5 /* LaunchScreen.storyboard */; };
 		A19F9B671D3E0D0F008618B5 /* kantuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B661D3E0D0F008618B5 /* kantuTests.m */; };
-		A19F9B721D3E0D10008618B5 /* kantuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B711D3E0D10008618B5 /* kantuUITests.m */; };
 		A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A19F9B811D3E2529008618B5 /* IMCollectionViewCell.m */; };
 		A19F9B841D3E2529008618B5 /* IMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A19F9B821D3E2529008618B5 /* IMCollectionViewCell.xib */; };
 		A1D4A4D41D589082008861CA /* IMGBigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4A4D21D589082008861CA /* IMGBigCell.m */; };
 		A1D4A4D51D589082008861CA /* IMGBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D4A4D31D589082008861CA /* IMGBigCell.xib */; };
 		A1F357481D5B109D0053A4FE /* menulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F357471D5B109D0053A4FE /* menulist.plist */; };
 		A1F4DBAE1D45E44800F9DBEF /* IMGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */; };
+		ADA8B8401D7C34FC00FA9F39 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA8B83F1D7C34FC00FA9F39 /* QRViewController.m */; settings = {ASSET_TAGS = (); }; };
 		AE8CE9253CD158F3CF5C4A3B /* libPods-kantu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A19F9B631D3E0D0F008618B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A19F9B411D3E0D0D008618B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A19F9B481D3E0D0E008618B5;
-			remoteInfo = kantu;
-		};
-		A19F9B6E1D3E0D10008618B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A19F9B411D3E0D0D008618B5 /* Project object */;
 			proxyType = 1;
@@ -85,7 +78,6 @@
 		A19F9B621D3E0D0F008618B5 /* kantuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kantuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F9B661D3E0D0F008618B5 /* kantuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kantuTests.m; sourceTree = "<group>"; };
 		A19F9B681D3E0D0F008618B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A19F9B6D1D3E0D10008618B5 /* kantuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kantuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F9B711D3E0D10008618B5 /* kantuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kantuUITests.m; sourceTree = "<group>"; };
 		A19F9B731D3E0D10008618B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19F9B801D3E2529008618B5 /* IMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMCollectionViewCell.h; sourceTree = "<group>"; };
@@ -100,6 +92,8 @@
 		A1F4DBAC1D45E44800F9DBEF /* IMGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGModel.h; sourceTree = "<group>"; };
 		A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGModel.m; sourceTree = "<group>"; };
 		A7A747B477FCD4CDC2ADEE1F /* Pods-kantu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kantu.release.xcconfig"; path = "Pods/Target Support Files/Pods-kantu/Pods-kantu.release.xcconfig"; sourceTree = "<group>"; };
+		ADA8B83E1D7C34FC00FA9F39 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		ADA8B83F1D7C34FC00FA9F39 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +107,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A19F9B5F1D3E0D0F008618B5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19F9B6A1D3E0D0F008618B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,7 +152,6 @@
 			children = (
 				A19F9B491D3E0D0E008618B5 /* kantu.app */,
 				A19F9B621D3E0D0F008618B5 /* kantuTests.xctest */,
-				A19F9B6D1D3E0D10008618B5 /* kantuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,16 +252,26 @@
 		A1F4DBAF1D46121900F9DBEF /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				ADA8B83D1D7C34D800FA9F39 /* sys */,
 				A1F357491D5B333D0053A4FE /* baseVC */,
 				A1F357461D5B0E610053A4FE /* photoBrowser */,
 				A180548E1D51923100DDCD36 /* HomeVC.h */,
 				A180548F1D51923100DDCD36 /* HomeVC.m */,
-				A18C91441D5D62E300FD12C3 /* MusicViewController.h */,
-				A18C91451D5D62E300FD12C3 /* MusicViewController.m */,
 				A159AA8E1D76C0EE00C5E97D /* TestVC.h */,
 				A159AA8F1D76C0EF00C5E97D /* TestVC.m */,
 			);
 			name = vc;
+			sourceTree = "<group>";
+		};
+		ADA8B83D1D7C34D800FA9F39 /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				A18C91441D5D62E300FD12C3 /* MusicViewController.h */,
+				A18C91451D5D62E300FD12C3 /* MusicViewController.m */,
+				ADA8B83E1D7C34FC00FA9F39 /* QRViewController.h */,
+				ADA8B83F1D7C34FC00FA9F39 /* QRViewController.m */,
+			);
+			name = sys;
 			sourceTree = "<group>";
 		};
 		F67EE16A4F21046BD688141B /* Frameworks */ = {
@@ -328,24 +324,6 @@
 			productReference = A19F9B621D3E0D0F008618B5 /* kantuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A19F9B6C1D3E0D0F008618B5 /* kantuUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A19F9B7C1D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantuUITests" */;
-			buildPhases = (
-				A19F9B691D3E0D0F008618B5 /* Sources */,
-				A19F9B6A1D3E0D0F008618B5 /* Frameworks */,
-				A19F9B6B1D3E0D0F008618B5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A19F9B6F1D3E0D10008618B5 /* PBXTargetDependency */,
-			);
-			name = kantuUITests;
-			productName = kantuUITests;
-			productReference = A19F9B6D1D3E0D10008618B5 /* kantuUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,10 +337,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					A19F9B611D3E0D0F008618B5 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = A19F9B481D3E0D0E008618B5;
-					};
-					A19F9B6C1D3E0D0F008618B5 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = A19F9B481D3E0D0E008618B5;
 					};
@@ -383,7 +357,6 @@
 			targets = (
 				A19F9B481D3E0D0E008618B5 /* kantu */,
 				A19F9B611D3E0D0F008618B5 /* kantuTests */,
-				A19F9B6C1D3E0D0F008618B5 /* kantuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,13 +377,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A19F9B601D3E0D0F008618B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19F9B6B1D3E0D0F008618B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -484,6 +450,7 @@
 				A19F9B831D3E2529008618B5 /* IMCollectionViewCell.m in Sources */,
 				A159AA901D76C0EF00C5E97D /* TestVC.m in Sources */,
 				A180549A1D51E35100DDCD36 /* KKDateFormatter.m in Sources */,
+				ADA8B8401D7C34FC00FA9F39 /* QRViewController.m in Sources */,
 				A1D4A4D41D589082008861CA /* IMGBigCell.m in Sources */,
 				A19F9B4E1D3E0D0F008618B5 /* main.m in Sources */,
 			);
@@ -497,14 +464,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A19F9B691D3E0D0F008618B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A19F9B721D3E0D10008618B5 /* kantuUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -512,11 +471,6 @@
 			isa = PBXTargetDependency;
 			target = A19F9B481D3E0D0E008618B5 /* kantu */;
 			targetProxy = A19F9B631D3E0D0F008618B5 /* PBXContainerItemProxy */;
-		};
-		A19F9B6F1D3E0D10008618B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A19F9B481D3E0D0E008618B5 /* kantu */;
-			targetProxy = A19F9B6E1D3E0D10008618B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -577,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -616,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,7 +611,6 @@
 		A19F9B7A1D3E0D10008618B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = kantuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuTests;
@@ -669,34 +622,11 @@
 		A19F9B7B1D3E0D10008618B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = kantuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kantu.app/kantu";
-			};
-			name = Release;
-		};
-		A19F9B7D1D3E0D10008618B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = kantuUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = kantu;
-			};
-			name = Debug;
-		};
-		A19F9B7E1D3E0D10008618B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = kantuUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.light.kantuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = kantu;
 			};
 			name = Release;
 		};
@@ -726,15 +656,6 @@
 			buildConfigurations = (
 				A19F9B7A1D3E0D10008618B5 /* Debug */,
 				A19F9B7B1D3E0D10008618B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A19F9B7C1D3E0D10008618B5 /* Build configuration list for PBXNativeTarget "kantuUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A19F9B7D1D3E0D10008618B5 /* Debug */,
-				A19F9B7E1D3E0D10008618B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
