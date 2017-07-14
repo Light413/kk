@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 
+#import <LocalAuthentication/LocalAuthentication.h>
+
 @interface HomeVC : BaseViewController
 
 @end

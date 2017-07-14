@@ -30,7 +30,7 @@
 		A1D4A4D51D589082008861CA /* IMGBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D4A4D31D589082008861CA /* IMGBigCell.xib */; };
 		A1F357481D5B109D0053A4FE /* menulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F357471D5B109D0053A4FE /* menulist.plist */; };
 		A1F4DBAE1D45E44800F9DBEF /* IMGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4DBAD1D45E44800F9DBEF /* IMGModel.m */; };
-		ADA8B8401D7C34FC00FA9F39 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA8B83F1D7C34FC00FA9F39 /* QRViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ADA8B8401D7C34FC00FA9F39 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA8B83F1D7C34FC00FA9F39 /* QRViewController.m */; };
 		AE8CE9253CD158F3CF5C4A3B /* libPods-kantu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5860E9E3C2FCD11A2E3EB8 /* libPods-kantu.a */; };
 /* End PBXBuildFile section */
 
@@ -335,6 +335,7 @@
 				TargetAttributes = {
 					A19F9B481D3E0D0E008618B5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8R29X3H9MY;
 					};
 					A19F9B611D3E0D0F008618B5 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -583,6 +584,7 @@
 			baseConfigurationReference = 0C4DF0F4E99AED682ED2BF49 /* Pods-kantu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8R29X3H9MY;
 				GCC_PREFIX_HEADER = kantu/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kantu/Info.plist;
@@ -598,6 +600,7 @@
 			baseConfigurationReference = A7A747B477FCD4CDC2ADEE1F /* Pods-kantu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8R29X3H9MY;
 				GCC_PREFIX_HEADER = kantu/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kantu/Info.plist;

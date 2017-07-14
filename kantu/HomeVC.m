@@ -87,6 +87,36 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ([[UIDevice currentDevice].systemVersion floatValue] < 8.0) {
+        NSLog(@"不支持指纹识别");
+        return;
+    }
+    
+    dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+    
+    LAContext * ctx = [[LAContext alloc]init];
+    
+    dispatch_semaphore_wait(sem, dispatch_time(DISPATCH_TIME_NOW, DISPATCH_TIME_FOREVER));
+    if ([ctx canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:nil]) {
+        NSLog(@"is support");
+        
+        [ctx evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"需要验证你的指纹信息" reply:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                NSLog(@"is success");
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    dispatch_semaphore_signal(sem);
+                });
+                
+            }
+            else
+            {
+                NSLog(@"is cancle");
+            }
+            
+        }];
+    }
+
+    dispatch_semaphore_wait(sem, dispatch_time(DISPATCH_TIME_NOW, DISPATCH_TIME_FOREVER));
     NSDictionary * dic  = _dataArray[indexPath.row];
     NSString * _identifier = dic[@"ID"];
     
@@ -105,13 +135,41 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     
-    
-    
+
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
+}
+
+
+-(void)testTouchID
+{
+    if ([[UIDevice currentDevice].systemVersion floatValue] < 8.0) {
+        NSLog(@"不支持指纹识别");
+        return;
+    }
+    
+    LAContext * ctx = [[LAContext alloc]init];
+    if ([ctx canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:nil]) {
+        NSLog(@"is support");
+        
+        [ctx evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"需要验证你的指纹信息" reply:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                NSLog(@"is success");
+            }
+            else
+            {
+                NSLog(@"is cancle");
+            }
+            
+        }];
+    }
+    else
+    {
+        NSLog(@"testTouchID not support");
+    }
 }
 
 
